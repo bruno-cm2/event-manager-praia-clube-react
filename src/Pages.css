@@ -1,0 +1,37 @@
+.btn-outline-secondary{
+  --bs-btn-border-color: #ced4da;
+}
+
+input{
+  border-color: #ced4da !important;
+}
+
+.dropdown-menu {
+  width: calc(100% + 2px) !important;
+  margin-left: -1px !important;
+  min-width: 0;
+}
+
+.header.bi{
+  margin-left: 0;
+  font-size: 1.6rem;
+}
+
+h2{
+  position: relative;
+  top: 4px;
+  margin-left: 0.6rem;
+}
+
+select.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem rgba(var(--bs-primary-rgb), 0.50);
+}
+
+.header.bi.bi-pencil-fill{
+  border-bottom: 1.5px solid currentColor;
+  line-height: 1;
+  font-size: 1.4rem;
+  position: relative;
+  margin-right: 0.1rem;
+}
