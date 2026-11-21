@@ -1,4 +1,4 @@
-import service
+from . import service
 from fastapi import APIRouter
 from .models import GoogleLogin, GoogleSignup, Token, UserResponse
 

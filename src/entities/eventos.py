@@ -17,6 +17,7 @@ class Evento(Base):
     reservas: Mapped[list["Reserva"]] = relationship(
         back_populates="evento", cascade="all, delete-orphan"
     )
+    tipo: Mapped[str] = mapped_column(nullable=False)
 
 
 class Reserva(Base):
@@ -36,3 +37,9 @@ class Reserva(Base):
             using="gist",
         ),
     )
+
+class Tipo(Base):
+    __tablename__ = "tipos"
+
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    nome: Mapped[str] = mapped_column(nullable=False)
