@@ -1,0 +1,10 @@
+{
+    "files.exclude": {
+        "**/.claude": true,
+        "**/venv": true,
+        "**/__pycache__": true,
+    },
+    "python.analysis.extraPaths": [
+        "./src"
+    ]
+}
